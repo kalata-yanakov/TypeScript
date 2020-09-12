@@ -1,0 +1,23 @@
+{
+  "name": "phonebook",
+  "version": "1.0.0",
+  "description": "Phonebook App",
+  "main": "main.js",
+  "scripts": {
+    "build": " tsc --build tsconfig.json",
+    "build:dev": " tsc --build tsconfig.json --watch",
+    "start": "ts-node --project tsconfig.json ./src/main.ts"
+  },
+  "author": "Telerik Academy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/moment": "^2.13.0",
+    "ts-node": "^8.10.2",
+    "tslint": "^5.20.1"
+  },
+  "dependencies": {
+    "@types/typescript": "^2.0.0",
+    "moment": "^2.26.0",
+    "typescript": "^3.9.3"
+  }
+}

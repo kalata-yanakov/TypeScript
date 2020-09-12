@@ -1,0 +1,34 @@
+{
+  "name": "typescript-node-jasmine-starter",
+  "version": "1.0.0",
+  "description": "Seed project for TypeScript and Node.js with Jasmine for Telerik Academy Alpha course",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine-ts": "^0.3.0",
+    "@types/cpx": "^1.5.0",
+    "@types/jasmine": "^2.8.9",
+    "@types/node": "^10.11.7",
+    "cpx": "^1.5.0",
+    "jasmine": "^3.2.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "rimraf": "^2.6.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-microsoft-contrib": "^5.2.1",
+    "typescript": "^3.1.3"
+  },
+  "scripts": {
+    "start": "ts-node --project tsconfig.json ./src/main.ts",
+    "test": "jasmine-ts",
+    "build": "npm run clean & tsc --project .",
+    "build-w": "npm run clean & tsc --project . -w",
+    "clean": "rimraf ./dist",
+    "cpx": "npm run clean & cpx ./src/**/*.txt dist/src -w",
+    "copy": "npm run clean & cpx src/**/*.txt dist/src",
+    "build-copy": "npm run copy | npm run build",
+    "build-copy-w": "npm run cpx | npm run build-w"
+  },
+  "author": "Martin Veshev",
+  "license": "MIT"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "ts-workshop2-oop-skeleton",
+  "version": "1.0.0",
+  "repository": {},
+  "description": "TypeScript workshop 2 - OOP",
+  "main": "main.js",
+  "dependencies": {
+    "@types/validator": "^9.4.2",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "@types/cpx": "^1.5.1",
+    "@types/jasmine": "^2.8.9",
+    "@types/node": "^10.17.15",
+    "cpx": "^1.5.0",
+    "factory.ts": "^0.3.4",
+    "jasmine": "^3.5.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "jasmine-ts": "^0.3.0",
+    "rimraf": "^2.7.1",
+    "ts-loader": "^5.4.5",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.20.1",
+    "tslint-microsoft-contrib": "^5.2.1",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "ts-node --project tsconfig.json ./src/main.ts",
+    "test": "jasmine-ts"
+  },
+  "author": "Martin Veshev",
+  "license": "MIT"
+}

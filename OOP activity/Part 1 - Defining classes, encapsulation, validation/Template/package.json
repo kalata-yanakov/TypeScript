@@ -1,0 +1,38 @@
+{
+  "name": "boardr",
+  "version": "1.0.0",
+  "description": "Boardr",
+  "main": "main.js",
+  "dependencies": {
+    "@types/validator": "^9.4.2",
+    "moment": "^2.26.0",
+    "validator": "^10.8.0"
+  },
+  "devDependencies": {
+    "@types/cpx": "^1.5.0",
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.12.43",
+    "cpx": "^1.5.0",
+    "jest": "^24.8.0",
+    "majestic": "^1.7.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.10.2",
+    "tslint": "^5.17.0",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "typescript": "^3.9.3"
+  },
+  "scripts": {
+    "start": "ts-node --project ./tsconfig.json ./src/main.ts",
+    "start:safe": "npm run lint && ts-node --project ./tsconfig.json ./src/main.ts",
+    "test": "jest --color --verbose",
+    "majestic": "majestic",
+    "lint": "tslint --format stylish -p .",
+    "lint:fix": "tslint --fix -p .",
+    "clean": "rimraf ./dist",
+    "build": "npm run clean & tsc --project .",
+    "build-w": "npm run clean & tsc --project . -w"
+  },
+  "author": "Telerik Academy",
+  "license": "MIT"
+}
